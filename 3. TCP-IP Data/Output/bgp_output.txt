@@ -1,0 +1,379 @@
+
+|****************************************************************************************************|
+|*																									*|
+|*					SUMMARY FOR THIS FILE IS AT THE END OF THIS TEXT FILE							*|
+|*																									*|
+|****************************************************************************************************|
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 1
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:48.953 GMT
+Ethernet SRC Address 			00:c0:4f:23:c5:95
+Ethernet DEST Address 			00:00:0c:35:0e:1c
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							255
+SRC IP Address 					192.168.0.33
+DEST IP Address 				192.168.0.15
+
+TCP Header Length 				20
+TCP SRC Port 					179
+TCP DEST Port 					2123
+Window Size 					16101
+
+Data in packet: 
+
+
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 2
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:48.953 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				20
+TCP SRC Port 					2123
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 3
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:48.953 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				20
+TCP SRC Port 					2123
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 4
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:48.959 GMT
+Ethernet SRC Address 			00:c0:4f:23:c5:95
+Ethernet DEST Address 			00:00:0c:35:0e:1c
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							255
+SRC IP Address 					192.168.0.33
+DEST IP Address 				192.168.0.15
+
+TCP Header Length 				20
+TCP SRC Port 					179
+TCP DEST Port 					2123
+Window Size 					16101
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 5
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:56.953 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					60 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				40
+TCP SRC Port 					2124
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: 
+
+T
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 6
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:56.957 GMT
+Ethernet SRC Address 			00:c0:4f:23:c5:95
+Ethernet DEST Address 			00:00:0c:35:0e:1c
+IP Header Length 				20 Bytes
+Total Length 					44 Bytes
+TTL 							255
+SRC IP Address 					192.168.0.33
+DEST IP Address 				192.168.0.15
+
+TCP Header Length 				24
+TCP SRC Port 					179
+TCP DEST Port 					2124
+Window Size 					16384
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 7
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:56.957 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				20
+TCP SRC Port 					2124
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 8
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:56.957 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					69 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				20
+TCP SRC Port 					2124
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: 	
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 9
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:57.161 GMT
+Ethernet SRC Address 			00:c0:4f:23:c5:95
+Ethernet DEST Address 			00:00:0c:35:0e:1c
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							255
+SRC IP Address 					192.168.0.33
+DEST IP Address 				192.168.0.15
+
+TCP Header Length 				20
+TCP SRC Port 					179
+TCP DEST Port 					2124
+Window Size 					16355
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 10
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:57.291 GMT
+Ethernet SRC Address 			00:c0:4f:23:c5:95
+Ethernet DEST Address 			00:00:0c:35:0e:1c
+IP Header Length 				20 Bytes
+Total Length 					69 Bytes
+TTL 							255
+SRC IP Address 					192.168.0.33
+DEST IP Address 				192.168.0.15
+
+TCP Header Length 				20
+TCP SRC Port 					179
+TCP DEST Port 					2124
+Window Size 					16355
+
+Data in packet: 	!
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 11
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:57.291 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				20
+TCP SRC Port 					2124
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: 
+
+	@
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 12
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:57.291 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					59 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				20
+TCP SRC Port 					2124
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 13
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:57.295 GMT
+Ethernet SRC Address 			00:c0:4f:23:c5:95
+Ethernet DEST Address 			00:00:0c:35:0e:1c
+IP Header Length 				20 Bytes
+Total Length 					59 Bytes
+TTL 							255
+SRC IP Address 					192.168.0.33
+DEST IP Address 				192.168.0.15
+
+TCP Header Length 				20
+TCP SRC Port 					179
+TCP DEST Port 					2124
+Window Size 					16355
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 14
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:57.303 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				20
+TCP SRC Port 					2124
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 15
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	2000-3-30 T 4:56:57.497 GMT
+Ethernet SRC Address 			00:c0:4f:23:c5:95
+Ethernet DEST Address 			00:00:0c:35:0e:1c
+IP Header Length 				20 Bytes
+Total Length 					40 Bytes
+TTL 							255
+SRC IP Address 					192.168.0.33
+DEST IP Address 				192.168.0.15
+
+TCP Header Length 				20
+TCP SRC Port 					179
+TCP DEST Port 					2124
+Window Size 					16336
+
+Data in packet: NO DATA FOUND
+
+-------------------------------------------------------------------------------------
+
+Packet Number: 16
+
+Packet Type 					IP (Internet Layer)
+Timestamp (of Packet Capture)	a8 T 0 GMT
+Ethernet SRC Address 			00:00:0c:35:0e:1c
+Ethernet DEST Address 			00:c0:4f:23:c5:95
+IP Header Length 				20 Bytes
+Total Length 					256 Bytes
+TTL 							64
+SRC IP Address 					192.168.0.15
+DEST IP Address 				192.168.0.33
+
+TCP Header Length 				20
+TCP SRC Port 					2124
+TCP DEST Port 					179
+Window Size 					32120
+
+Data in packet: bH@@
+@@d@
+T	
+cH@@
+@@d@
+T	
+
+
+|****************************************************************************************************|
+|*																									*|
+|*						SUMMARY FOR "./Input/bgp.pcap" FILE                  					*|
+|*																									*|
+|****************************************************************************************************|
+
+
+PCAP Filename = ./Input/bgp.pcap
+
+Total No. Of Packets = 16
+
+Total Time Span = 9 sec
+
+Average packets/sec = 1
+
+Total bytes transferred = 976
+
+Average packet size = 61 bytes
+
+Average bytes/sec = 108
+
+Average KBit/sec = 0
+
+=======================================================================================================
