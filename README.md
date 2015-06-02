@@ -1,5 +1,5 @@
 # LThreeCube
-Solutions to Programming Assignments for L3Cube - Round Two (2015)
+Solutions to Programming Assignments for LThreeCube Round Two (2015)
 
 Team Name : QuadCores
 
