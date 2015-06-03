@@ -6,14 +6,40 @@
 	1. input file : 
 	2. src: readlog.py 
 	3. output: default
-	4. requirements : 
+
+* Features and Functionalities: 
+	1. This program generates output.txt file that contains HTTP Log Info in a proper human-readable format as a basic output
+	2. ADVANCED : 
+	(Installation steps follow)
+	
+	a. We thought of using a database to store all the entries as it would be much more feasible and efficient to store data of more than one 
+	   weblog file and perform all the aggregation functions over this complete dataset. Also, this eliminates the burden on the main memory 
+	   for large dataset.
+	b. MongoDB has been used as the backend owing to its flexible collection formats (HTTP Dataset does not follow fix format in all headers) 
+	   and MapReduce functionality. This hugely increases the speed and scalability of the data storage and analysis.
+	   We have used Java Servlet API to retrieve data from this MongoDB and displayed it in tabular form and pie charts. 
+	   The fact that MongoDB has been used makes it easy to add any kind of filtering and aggregation queries as and when required.
+	c. Also, using Java Servlet facilitates use of unending web-technology resources like D3, JQuery, Bootstrap, AngularJS, etc. easily 
+	   for aesthetic visual representation of data.
+
+* Additional Requirements and Installation Steps:	
+	1. Install MongoDB :
+			> Run "mongo_install.bash" (*Note : Run it only if MongoDB is not present on your system, else data loss might occur!)
+			OR
+			> Follow steps on "http://docs.mongodb.org/manual/"
+	2. /*VEDANG please write about all necessary steps for JAVA SERVLET CONFIG in identical manner as above.
+	3. Any more if req. */
 
 * Flow of Program:
+	1. Pass weblog.txt as a command line argument to 'readlog.py'
+	2. REGEX has been used to parse each HTTP Header based on the standard header format
+	3. This 'readlog.py' creates a new database named 'log' in MongoDB dynamically and stores all the HTTP Data in a collection 
+	   named 'http' - SCREENSHOT ATTACHED
+	   (*Note : Use "> sudo service mongod start" command to start mongod server before executing this step )
+	4. Also a file 'output.txt' is generated that contains all the HTTP Log Data parsed
+	5. Now that all the data has been stored in MongoDB, J2EE is used to retrieve this data and render it to any Java Servlet where it can 
+	   be viewed in required manner.
 
-* Logic:
-
-* Installation Steps:
- 
 ===========================================================================================================================================
 
 * Assignment 2: Is Birthday paradox really valid?
@@ -45,7 +71,9 @@
 	1. input 		: 1st parameter = PCAP/CAP test file ( runs for all 4 : arp-storm.pcap,tcp-ecn-sample.pcap,http_witp_jpegs.cap,bgp.pcap )
 					  2nd parameter = output file name for info generated
 	2. src 			: PCAP_parser.c ( packetread.c is included as header )
-	3. output 		: {argv[2]}.txt ( output file that contains all the DETAILED FIELDS of the packets and SUMMARY at the end )
+	3. output 		: DETAILED INFORMATION of all packets
+					  SUMMARY at the end of the output file
+					  {argv[2]}.txt is the output file that contains all these DETAILED FIELDS of the packets and SUMMARY
 	4. requirements : sudo apt-get install libpcap-dev ( for C library that supports pcap - network traffic capture interface )
 
 * Flow of Program:
@@ -76,7 +104,7 @@
 	   d. Get latest version number
 	   e. Exit 
 
-* Features and Functionalities:
+* Features and Functionalities: 
 	1. Lets the user close the program and still access all the previously created versions on next execution
 	2. We have created a group of every 5 successive versions and stored it in external file
 	   This saves an overhead of opening every previous version file of the version we wish to revert to by using Hashing
