@@ -12,15 +12,10 @@
 	2. ADVANCED : 
 	(Installation steps follow)
 	
-	a. We thought of using a database to store all the entries as it would be much more feasible and efficient to store data of more than one 
-	   weblog file and perform all the aggregation functions over this complete dataset. Also, this eliminates the burden on the main memory 
-	   for large dataset.
-	b. MongoDB has been used as the backend owing to its flexible collection formats (HTTP Dataset does not follow fix format in all headers) 
-	   and MapReduce functionality. This hugely increases the speed and scalability of the data storage and analysis.
-	c. We have used Java Servlet API to retrieve data from this MongoDB and displayed it in tabular form and pie charts. 
-	   The fact that MongoDB has been used makes it easy to add any kind of filtering and aggregation queries as and when required.
-	d. Also, using Java Servlet facilitates use of unending web-technology resources like D3, JQuery, Bootstrap, AngularJS, etc. easily 
-	   for aesthetic visual representation of data.
+	a. We thought of using a database to store all the entries as it would be much more feasible and efficient to store data of more than one weblog file and perform all the aggregation functions over this complete dataset. Also, this eliminates the burden on the main memory for large dataset.<br>
+	b. MongoDB has been used as the backend owing to its flexible collection formats (HTTP Dataset does not follow fix format in all headers) and MapReduce functionality. This hugely increases the speed and scalability of the data storage and analysis.<br>
+	c. We have used Java Servlet API to retrieve data from this MongoDB and displayed it in tabular form and pie charts. The fact that MongoDB has been used makes it easy to add any kind of filtering and aggregation queries as and when required.<br>
+	d. Also, using Java Servlet facilitates use of unending web-technology resources like D3, JQuery, Bootstrap, AngularJS, etc. easily for aesthetic visual representation of data.<br>
 
 * Additional Requirements and Installation Steps:	
 	1. Install pygeoip (python library used for finding location from IP Address)
