@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>newpackage.Analytics</servlet-class>
+        <init-param>
+            <description>Port number of MongoDB</description>
+            <param-name>Port_Number</param-name>
+            <param-value>27017</param-value>
+        </init-param>
+        <init-param>
+            <description>Database containing Http log file data</description>
+            <param-name>Database_Name</param-name>
+            <param-value>test</param-value>
+        </init-param>
+        <init-param>
+            <description>Name of collection</description>
+            <param-name>Collection_Name</param-name>
+            <param-value>http</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/My</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

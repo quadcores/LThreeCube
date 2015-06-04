@@ -2,15 +2,24 @@
 #include<math.h>
 #include<time.h>
 #include<string.h>
-#define no_of_simulations 10000												//number of time the experiment is to be run
 
 void one_run(int stats[]);
 
 int main()
 {
-	int i, stats[367];
-	long double probability1[367], probability2 = 1.0;	//probability1 = from experiment, probability2 = from formula 
+	int i, stats[367], choice = 0;
+	long double probability1[367], probability2 = 1.0;	//probability1 = from experiment, probability2 = from formula
+	int no_of_simulations = 10000;						//number of time the experiment is to be run 
+
+	printf("\nNumber of trials is %d currently. Do you want to change it? (0/1)  \n", no_of_simulations);
+	scanf("%d", &choice);
 	
+	if(choice == 1)
+	{
+		printf("\nEnter the number of times you wish to run the experiment : ");
+		scanf("%d", &no_of_simulations);
+	}
+
 	printf("\nRunning the Random Experiment %d times!\n\n", no_of_simulations); 	
 	for(i=0; i<no_of_simulations; i++)
 	{	
@@ -34,6 +43,8 @@ int main()
 		printf("\n|\t%d\t|\t%Lf\t|\t%Lf\t|", i, probability1[i]*100, ((long double)1-probability2)*100);
 	}
 	printf("\n|_______________|_______________________|_______________________|\n\n");
+
+	printf("\n*Note : The accuracy increases with increase in number of trials.\n\t10000 runs gives sufficiently accurate answer.\n\nCheck & compare for 23rd and 70th entry as 'The Birthday Paradox' says that \nprobability of repetition touches 50%% with 23 people and 99.9%% with 70 people. \n\n");
 	return 0;
 }
 	

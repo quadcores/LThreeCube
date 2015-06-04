@@ -1,11 +1,17 @@
 ===========================================================================================================================================
 
-* Assignment 1: Making sense out of HTTP log file
+* All assignments submitted with proper comments, documentation and README.md file
+* Authors : QuadCores
+* GroupID : 80
+
+===========================================================================================================================================
+
+* Assignment 1 : Making sense out of HTTP log file
  
 * Solution:
-	1. input file : 
-	2. src: readlog.py 
-	3. output: default
+	1. input file : weblog.txt
+	2. src: main.py 
+	3. output: output.txt, data entry in mongodb, visual aggregation results on java servlet
 
 * Features and Functionalities: 
 	1. This program generates output.txt file that contains HTTP Log Info in a proper human-readable format as a basic output
@@ -17,32 +23,41 @@
 	   for large dataset.
 	b. MongoDB has been used as the backend owing to its flexible collection formats (HTTP Dataset does not follow fix format in all headers) 
 	   and MapReduce functionality. This hugely increases the speed and scalability of the data storage and analysis.
-	   We have used Java Servlet API to retrieve data from this MongoDB and displayed it in tabular form and pie charts. 
+	c. We have used Java Servlet API to retrieve data from this MongoDB and displayed it in tabular form and pie charts. 
 	   The fact that MongoDB has been used makes it easy to add any kind of filtering and aggregation queries as and when required.
-	c. Also, using Java Servlet facilitates use of unending web-technology resources like D3, JQuery, Bootstrap, AngularJS, etc. easily 
+	d. Also, using Java Servlet facilitates use of unending web-technology resources like D3, JQuery, Bootstrap, AngularJS, etc. easily 
 	   for aesthetic visual representation of data.
 
 * Additional Requirements and Installation Steps:	
-	1. Install MongoDB :
-			> Run "mongo_install.bash" (*Note : Run it only if MongoDB is not present on your system, else data loss might occur!)
+	1. Install pygeoip (python library used for finding location from IP Address)
+			> sudo apt-get install pip 
+			> sudo pip install pygeoip
+	2. Install MongoDB :
+			> Run "mongo_install.bash" given in Installations and Screenshots folder
+				(*Note : Run it only if MongoDB is not present on your system, else data loss might occur!) 
 			OR
-			> Follow steps on "http://docs.mongodb.org/manual/"
-	2. /*VEDANG please write about all necessary steps for JAVA SERVLET CONFIG in identical manner as above.
-	3. Any more if req. */
+			> Follow steps on "http://docs.mongodb.org/manual/"		
+	3. If default port of mongod is not 27017, please make appropriate changes in source code of Analytics/src/java/newpackage/Analytics.java
+	4. Deploy the Analytics.war on any Java Server and run the application.
+			> You may refer "https://tomcat.apache.org/tomcat-6.0-doc/deployer-howto.html" for assistance in deploying the .war
 
 * Flow of Program:
-	1. Pass weblog.txt as a command line argument to 'readlog.py'
+	1. Pass weblog.txt as a command line argument to 'main.py'
 	2. REGEX has been used to parse each HTTP Header based on the standard header format
-	3. This 'readlog.py' creates a new database named 'log' in MongoDB dynamically and stores all the HTTP Data in a collection 
+	3. This 'main.py' creates a new database named 'log' in MongoDB dynamically and stores all the HTTP Data in a collection 
 	   named 'http' - SCREENSHOT ATTACHED
 	   (*Note : Use "> sudo service mongod start" command to start mongod server before executing this step )
 	4. Also a file 'output.txt' is generated that contains all the HTTP Log Data parsed
 	5. Now that all the data has been stored in MongoDB, J2EE is used to retrieve this data and render it to any Java Servlet where it can 
 	   be viewed in required manner.
+	6. Run any Java Servelet, for eg. Apache Tomcat
+	7. Now deploy the 'Analytics.war' file on the server using normal procedure
+			> You may refer "https://tomcat.apache.org/tomcat-6.0-doc/deployer-howto.html" for assistance in deploying the .war
+	8. Use the web page that is loaded to get a number of statistics in visually aesthetic manner - SCREENSHOTS ATTACHED
 
 ===========================================================================================================================================
 
-* Assignment 2: Is Birthday paradox really valid?
+* Assignment 2 : Is Birthday paradox really valid?
 
 * Solution:
 	1. input 		: none (Verifies for 1 to 366 persons on its own, default 10000 runs for high accuracy)
@@ -88,30 +103,46 @@
 
 * Assignment 4 : Simple Version Control
 
-* Solution:
-	1. input 		: initial commit file that has to be created and saved elsewhere is passed as argv[1]
-	2. src 			: svc.c
-	3. output 		: menu-driven version control system
-	4. requirements : no additional installations required
+* 2 solutions :
+	
+	A] Version_1 :
+		1. input 		: initial commit file that has to be created and saved elsewhere is passed as argv[1]
+		2. src 			: svc_version1.c
+		3. output 		: menu-driven version control system
+		4. requirements : no additional installations required
 
-* Flow of Program:
-	1. Write an initial commit (say test.txt) and save it before executing svc.c
-	2. Run svc.c, pass test.txt as an argument
-	3. Select option from menu, like:
-	   a. Display contents of the latest version
-	   b. Commit (1-delete a line, 2-append a new line at the end)
-	   c. Revert to Nth version
-	   d. Get latest version number
-	   e. Exit 
+		* Flow of Program:
+			1. Write an initial commit (say test.txt) and save it before executing svc.c
+			2. Run svc.c, pass test.txt as an argument
+			3. Select option from menu, like:
+			   a. Display contents of the latest version
+			   b. Commit (1-delete a line, 2-append a new line at the end)
+			   c. Revert to Nth version
+			   d. Get latest version number
+			   e. Exit 
+	
+		* Features and Functionalities: 
+			1. Lets the user close the program and still access all the previously created versions on next execution
+			2. We have created a group of every 5 successive versions and stored it in external file
+			   This saves an overhead of opening every previous version file of the version we wish to revert to by using Hashing
+			3. Dynamic hash tables are created as a map for knowing contents of different versions efficiently (named .maphashtab)
+			4. All the intermediate versions are stored as hidden files (.filename) in the same directory 	
+			5. To keep track of the latest version and number of lines in the initial commit file, external file (.bitmap) is used
 
-* Features and Functionalities: 
-	1. Lets the user close the program and still access all the previously created versions on next execution
-	2. We have created a group of every 5 successive versions and stored it in external file
-	   This saves an overhead of opening every previous version file of the version we wish to revert to by using Hashing
-	3. Dynamic hash tables are created as a map for knowing contents of different versions efficiently (named .maphashtab)
-	4. All the intermediate versions are stored as hidden files (.filename) in the same directory 	
-	5. To keep track of the latest version and number of lines in the initial commit file, external file (.bitmap) is used
+	B] Version_2 :
+		1. input 		: a. A file which is to be commited, passed as argv[1]
+					 	  b. A version number to be reverted to, passed as argv[1]
+		2. src 			: svc_version2.c
+		3. output 		: A standard version control system
+		4. requirements : no additional installations required
 
+		* Flow of Program:
+			1. Write some text in a file (say test.txt) and save it before executing svc.c
+			2. Run svc.c, pass test.txt as an argument, to form the initial commit number 0
+			3. Run svc repetitively by passing one of the following arguments:
+			   a. The file test.txt (after making changes to the initial file i.e. either appending a new line, or deleting an existing file)
+			   b. An integer, which corresponds to the version number to be reverted to (starting from 0)
+				
 ===========================================================================================================================================
 
 * Assignment 5 : Write a program to list duplicate files from hard drive
@@ -130,7 +161,7 @@
 	4. Repeat steps 1, 2, 3 till user wishes to exit
 
 * Logic:
-	1. Pass the directory to search for duplicates to function 'nftw(3)'
+	1. Pass the directory to search for duplicates to function 'nftw(3)'		(ftw stands for 'file tree walk') 
 	2. nftw(3) is present in 'ftw.h'. It walks through the directory tree that is located under the directory dirpath, and calls fn()
 	3. Duplicate finding logic is used in the fn() passed to nftw()
    	4. Duplicate file names are stored in a map where Filename is the key and Vector of strings is the value

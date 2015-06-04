@@ -1,0 +1,69 @@
+
+/* 
+    Created on : 2 Jun, 2015, 3:11:17 PM
+    Author     : vedangjoshi
+*/
+
+.customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: small;
+    border-collapse: collapse;
+    border-radius: 150px;
+    border-color: #006d91;
+}
+
+.customers td, #customers th {
+    font-size: 1em;
+    border: 1px solid #98bf21;
+    border-color: #006d91;
+    padding: 3px 7px 2px 7px;
+    word-break: normal;
+}
+
+.thead{
+    border-color: #006d91;
+
+}
+
+.customers tr {
+    font-size: 1.1em;
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    border-color: #006d91;
+    color: #ffffff;
+}
+
+.customers tr.alt td {
+    color: #000000;
+    text-align: left;
+    background-color: #EAF2D3;
+    word-break:normal;
+}
+
+.customers tr.alt1 td {
+    color: #000000;
+    text-align: left;
+    background-color: #ffffff;
+    word-break: normal;
+}
+
+.corners {
+    background-color: #CCFFEB;
+}
+
+.tboby {
+    overflow: auto;
+}
+
+.division{
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-right: 100px;
+    margin-left: 520px;     
+}
+
+.pos{
+    vertical-align: top;
+}
