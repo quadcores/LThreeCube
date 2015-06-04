@@ -5,10 +5,10 @@
 * 2 solutions :
 	
 	A] Version_1 :
-		1. input 		: initial commit file that has to be created and saved elsewhere is passed as argv[1]
-		2. src 			: svc_version1.c
-		3. output 		: menu-driven version control system
-		4. requirements : no additional installations required
+		<br>1. input 		: initial commit file that has to be created and saved elsewhere is passed as argv[1]<br>
+		2. src 			: svc_version1.c<br>
+		3. output 		: menu-driven version control system<br>
+		4. requirements : no additional installations required<br>
 
 		* Flow of Program:
 			1. Write an initial commit (say test.txt) and save it before executing svc.c
@@ -29,11 +29,11 @@
 			5. To keep track of the latest version and number of lines in the initial commit file, external file (.bitmap) is used
 
 	B] Version_2 :
-		1. input 		: a. A file which is to be commited, passed as argv[1]
-					 	  b. A version number to be reverted to, passed as argv[1]
-		2. src 			: svc_version2.c
-		3. output 		: A standard version control system
-		4. requirements : no additional installations required
+		<br>1. input 		: a. A file which is to be commited, passed as argv[1] <br>
+		 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;b. A version number to be reverted to, passed as argv[1] <br>
+		2. src 			: svc_version2.c<br>
+		3. output 		: A standard version control system<br>
+		4. requirements : no additional installations required<br>
 
 		* Flow of Program:
 			1. Write some text in a file (say test.txt) and save it before executing svc.c
